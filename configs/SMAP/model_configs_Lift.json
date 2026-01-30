@@ -8,7 +8,7 @@
 
   "ms_kernels": [16, 8, 4],
   "spectral_boundary": "reflect",
-  "spectral_tau": 0.02,
+  "spectral_tau": 0.01,
   "spectral_eps": 1e-8,
   "spectral_min_bw": 0.0,
 
@@ -59,9 +59,9 @@
   "res_level": 0.5,
   "fusion_level": 0.5,
 
-  "alpha_freq": 0.3,
-  "alpha_time": 0.7,
-  "alpha_gate": 2.0,
+  "alpha_freq": 0.5,
+  "alpha_time": 0.5,
+  "alpha_gate": 5.0,
   "smooth_k": 3,
   "eps": 1e-8
 }
