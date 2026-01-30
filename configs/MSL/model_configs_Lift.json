@@ -1,0 +1,67 @@
+{
+  "seq_len": 96,
+  "enc_in": 1,
+
+  "n_fft": 64,
+  "hop_length": 16,
+  "win_length": 64,
+
+  "ms_kernels": [4, 2, 1],
+  "spectral_boundary": "reflect",
+  "spectral_tau": 0.02,
+  "spectral_eps": 1e-8,
+  "spectral_min_bw": 0.0,
+
+  "patch_len": 6,
+  "patch_dropout": 0.1,
+
+  "d_model": 128,
+  "e_layers": 1,
+  "n_heads": 8,
+  "d_ff": 512,
+  "attn_dropout": 0.1,
+  "proj_dropout": 0.1,
+  "ff_dropout": 0.1,
+  "norm": "layer",
+  "activation": "gelu",
+  "dropout": 0.1,
+
+  "fusion_layers": 1,
+  "fusion_dropout": 0.1,
+  "fusion_d_ff": 128,
+  "fuse_t_from_m": false,
+
+  "film_dropout": 0.1,
+  "film_d_ff": 128,
+  "film_activation": "gelu",
+
+  "num_prototypes": 16,
+  "proto_temp": 5.0,
+  "ema_momentum": 0.99,
+  "conf_threshold": 0.85,
+  "update_q_err": 0.3,
+  "update_q_ad": 0.3,
+
+  "warmup_steps": 500,
+  "ramp_steps": 1000,
+  "lambda_max": 0.3,
+
+  "z_fuse_hidden": 512,
+
+  "alpha_cycle_l": 0.5,
+  "alpha_ms_l": 0.5,
+  "alpha_cons_l": 0.1,
+
+  "alpha_cycle_s": 0.5,
+  "alpha_ms_s": 0.5,
+  "alpha_cons_s": 0.1,
+
+  "res_level": 0.8,
+  "fusion_level": 0.2,
+
+  "alpha_freq": 0.3,
+  "alpha_time": 0.7,
+  "alpha_gate": 1.0,
+  "smooth_k": 15,
+  "eps": 1e-8
+}

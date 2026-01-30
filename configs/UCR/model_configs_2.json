@@ -1,0 +1,28 @@
+{
+    "seq_len": 96,
+    "patch_len": 4,
+
+    "ms_kernels": [2],
+    "ms_method": "average_pooling",
+
+    "topk": 10,
+    "n_query": 3,
+    "query_len": 5,
+    "bank_size": 16,
+    "decay": 0.95,
+    "epsilon": 1e-5,
+
+    "e_layers": 1,
+    "d_layers": 1,
+    "m_layers": 1,
+
+    "n_heads": 4,
+    "attn_dropout": 0.1,
+    "proj_dropout": 0.1,
+
+    "d_model": 128,
+    "d_ff": null,
+    "ff_dropout": 0.1,
+    "norm": "layernorm",
+    "activation": "gelu"
+}

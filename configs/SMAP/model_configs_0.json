@@ -1,0 +1,69 @@
+{
+  "seq_len": 192,
+  "enc_in": 1,
+  "patch_len": 8,
+
+  "ms_kernels": [24, 12, 6],
+  "ms_method": "average_pooling",
+
+  "topk": 10,
+  "n_query": 5,
+  "query_len": 5,
+  "bank_size": 32,
+  "decay": 0.9,
+  "epsilon": 1e-5,
+
+  "e_layers": 1,
+  "d_layers": 1,
+  "m_layers": 1,
+
+  "n_heads": 8,
+  "attn_dropout": 0,
+  "proj_dropout": 0,
+
+  "d_model": 128,
+  "d_ff": null,
+  "ff_dropout": 0,
+  "norm": "layernorm",
+  "activation": "gelu",
+
+  "n_fft": 16,
+  "hop_length": 8,
+  "win_length": 12,
+  "z_dim": 128,
+
+  "num_prototypes": 32,
+  "proto_temp": 3.0,
+  "ema_momentum": 0.99,
+
+  "warmup_steps": 2000,
+  "ramp_steps": 4000,
+  "lambda_max": 0.3,
+
+  "update_q_err": 0.2,
+  "update_q_ad": 0.2,
+
+  "lam_ad": 0.2,
+
+  "alpha_freq": 0.1,
+  "alpha_time": 0.9,
+  "alpha_gate": 0.2,
+  "smooth_k": 3,
+
+  "time_kernels": [3, 3],
+  "time_dilations": [1],
+  "time_gn_groups": 16,
+
+  "freq_kernels": [[3, 3], [3, 3]],
+  "freq_pool_mode": "attn",
+  "freq_pool_hidden": null,
+  "freq_gn_groups": 16,
+
+  "use_wavelet_time": true,
+  "wt_levels": 2,
+  "wt_include_raw": false,
+  "wt_trainable": false,
+
+  "enc_out_ln": true,
+  "gate_mode": "mix"
+}

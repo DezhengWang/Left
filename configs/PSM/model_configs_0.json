@@ -1,0 +1,56 @@
+{
+  "seq_len": 192,
+  "enc_in": 25,
+  "patch_len": 6,
+
+  "ms_kernels": [32, 16, 8, 4, 2],
+  "ms_method": "average_pooling",
+
+  "topk": 10,
+  "n_query": 5,
+  "query_len": 5,
+  "bank_size": 32,
+  "decay": 0.95,
+  "epsilon": 1e-5,
+
+  "e_layers": 2,
+  "d_layers": 2,
+  "m_layers": 2,
+
+  "n_heads": 4,
+  "attn_dropout": 0.1,
+  "proj_dropout": 0.1,
+
+  "d_model": 128,
+  "d_ff": null,
+  "ff_dropout": 0.1,
+  "norm": "layernorm",
+  "activation": "gelu",
+
+  "n_fft": 64,
+  "hop_length": 16,
+  "win_length": 64,
+  "z_dim": 128,
+
+  "num_prototypes": 32,
+  "proto_temp": 3.0,
+  "ema_momentum": 0.9,
+
+  "warmup_steps": 1000,
+  "ramp_steps": 2000,
+  "lambda_max": 0.1,
+
+  "update_q_err": 0.6,
+  "update_q_ad": 0.6,
+
+  "lam_ad": 0.2,
+
+  "alpha_freq": 0.6,
+  "alpha_time": 0.4,
+  "alpha_gate": 0.3,
+  "smooth_k": 5,
+
+  "time_kernels": [5, 3],
+  "freq_kernels": [[3, 3], [3, 3]],
+  "gate_mode": "mix"
+}
