@@ -49,11 +49,11 @@
   "z_fuse_hidden": 128,
 
   "alpha_cycle_l": 0.1,
-  "alpha_casd_l": 0.85,
+  "alpha_ms_l": 0.85,
   "alpha_cons_l": 0.1,
 
   "alpha_cycle_s": 0.2,
-  "alpha_casd_s": 0.8,
+  "alpha_ms_s": 0.8,
   "alpha_cons_s": 0.1,
 
   "res_level": 0.3,
