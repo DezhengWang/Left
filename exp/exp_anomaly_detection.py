@@ -11,7 +11,7 @@ import numpy as np
 import math
 import json
 from models.CrossAD.Basic_CrossAD import Basic_CrossAD
-from models.Lift.LIFT import Lift
+from models.Left.LEFT import Left
 
 warnings.filterwarnings('ignore')
 
@@ -28,7 +28,7 @@ class Exp_Anomaly_Detection():
             self.train_configs = Configs(
                 os.path.join(self.args.configs_path, self.args.data_origin, "train_configs.json"))
 
-            if self.args.model_class in ['Lift', ]:
+            if self.args.model_class in ['Left', ]:
                 self.hyper_args = Configs(
                     os.path.join(self.args.configs_path, self.args.data, f"model_configs_Lift.json"))
 
@@ -38,7 +38,7 @@ class Exp_Anomaly_Detection():
             self.model_configs.device = self.device
             self.train_configs = Configs(os.path.join(self.args.configs_path, self.args.data, "train_configs.json"))
 
-            if self.args.model_class in ['Lift', ]:
+            if self.args.model_class in ['Left', ]:
                 self.hyper_args = Configs(
                     os.path.join(self.args.configs_path, self.args.data, f"model_configs_Lift.json"))
 
@@ -62,7 +62,7 @@ class Exp_Anomaly_Detection():
 
     def _build_model(self):
         model_class = eval(self.args.model_class)
-        if self.args.model_class in ['Lift', ]:
+        if self.args.model_class in ['Left', ]:
             model = model_class(self.hyper_args)
         else:
             model = model_class(self.model_configs)
