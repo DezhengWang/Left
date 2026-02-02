@@ -41,7 +41,7 @@ if __name__ == '__main__':
     # model
     parser.add_argument('--dropout', type=float, default=0.1, help='dropout rate')
     parser.add_argument('--n_fft', type=int, default=64, help='number of FFT')
-    parser.add_argument('--model_class', type=str, default="Lift", help='model name')
+    parser.add_argument('--model_class', type=str, default="Left", help='model name')
 
     args = parser.parse_args()
     args.device = torch.device("cpu")
